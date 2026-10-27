@@ -218,6 +218,28 @@ footer a:hover{color:var(--coral)}
 .reveal{transition:transform .8s ease, opacity .8s ease}
 .reveal.pre{transform:translateY(18px)}
 
+/* custom menu */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:30px}
+.how div{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:16px 18px;color:var(--ink);font-weight:600}
+.how b{flex:none;width:36px;height:36px;border-radius:50%;background:var(--maroon);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:17px}
+@media (max-width:760px){.how{grid-template-columns:1fr}}
+.cchips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.cchips .chip{text-decoration:none;background:#fff;border:1px solid var(--line)}
+.cchips .chip:hover{border-color:var(--maroon);color:var(--maroon)}
+.cgrid{columns:3 280px;column-gap:20px}
+.ccard{break-inside:avoid;background:#fff;border-radius:20px;padding:22px 24px;margin-bottom:20px;scroll-margin-top:24px}
+.ccard h3{font-size:22px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding-bottom:12px;border-bottom:2px solid var(--maroon);margin-bottom:6px}
+.ccard h3 small{font-family:var(--body);font-size:13px;font-weight:700;color:var(--maroon);font-variant-numeric:tabular-nums}
+.ccard ul{list-style:none;margin:0;padding:0}
+.ccard li{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);color:var(--ink);font-weight:600;font-size:16px}
+.ccard li:last-child{border-bottom:0}
+.cnote{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 30px;background:var(--ink);color:var(--muted-d);border-radius:22px;padding:26px 30px;margin-top:10px}
+.cnote h3{color:#fff;font-size:24px;margin-bottom:4px}
+.cnote .call small{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.cnote .call b{color:#fff;font-size:24px;font-family:var(--display)}
+.terms{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;max-width:760px}
+.terms h3{font-family:var(--body);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-bottom:8px}
+.terms ul{margin:0;padding-left:18px;display:grid;gap:4px}
 [hidden]{display:none!important}
 .mb-head .eyebrow{color:var(--coral)}
 .tagline{font-family:var(--display);font-style:italic;font-weight:600;color:var(--coral);font-size:20px;margin-top:14px}
