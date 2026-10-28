@@ -218,6 +218,9 @@ footer a:hover{color:var(--coral)}
 .reveal{transition:transform .8s ease, opacity .8s ease}
 .reveal.pre{transform:translateY(18px)}
 
+.wa-row{display:flex;flex-wrap:wrap;gap:10px}
+.wa{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:#1F8F4E;color:#fff;font-weight:700;font-size:15px;text-decoration:none}
+.wa:hover{background:#18763F}
 /* custom menu */
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:30px}
 .how div{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:16px 18px;color:var(--ink);font-weight:600}
