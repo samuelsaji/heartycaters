@@ -218,6 +218,10 @@ footer a:hover{color:var(--coral)}
 .reveal{transition:transform .8s ease, opacity .8s ease}
 .reveal.pre{transform:translateY(18px)}
 
+/* Codescape footer credit */
+.credit{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--muted-d);font-size:.8rem;opacity:.8;transition:opacity .2s}
+.credit:hover,.credit:focus-visible{opacity:1}
+.credit img{height:10px;width:auto;opacity:.9}
 .wa-row{display:flex;flex-wrap:wrap;gap:10px}
 .wa{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:#1F8F4E;color:#fff;font-weight:700;font-size:15px;text-decoration:none}
 .wa:hover{background:#18763F}
