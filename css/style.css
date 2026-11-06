@@ -218,6 +218,8 @@ footer a:hover{color:var(--coral)}
 .reveal{transition:transform .8s ease, opacity .8s ease}
 .reveal.pre{transform:translateY(18px)}
 
+.stat b{white-space:nowrap}
+@media (max-width:760px){.stat b{font-size:clamp(26px,8vw,34px)}.stat+.stat{padding-left:18px}.stat:nth-child(3){padding-left:0}}
 /* Codescape footer credit */
 .credit{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--muted-d);font-size:.8rem;opacity:.8;transition:opacity .2s}
 .credit:hover,.credit:focus-visible{opacity:1}
