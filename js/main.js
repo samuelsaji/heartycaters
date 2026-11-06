@@ -37,6 +37,9 @@
     lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});
     document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
   }
+  // hide floating WhatsApp once the footer (which has its own icons) is on screen
+  var wf=document.querySelector('.wa-float'),ft=document.querySelector('footer');
+  if(wf&&ft&&'IntersectionObserver' in window){new IntersectionObserver(function(es){wf.classList.toggle('hide',es[0].isIntersecting)},{threshold:.05}).observe(ft);}
   // gentle lift-in for content below the fold
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target)}})},{threshold:.12});
