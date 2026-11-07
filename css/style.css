@@ -380,7 +380,7 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
 /* reels */
 .reels-sec .head p{margin-bottom:18px}
 .ig-btn{margin-top:4px}
-.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .reel-card{display:block;text-decoration:none;border-radius:24px;overflow:hidden;background:var(--ink-2);border:1px solid var(--line-d);transition:transform .35s ease,box-shadow .35s ease}
 .reels-sec:not(.dark) .reel-card{background:var(--ink);border-color:transparent}
 .reel-card:hover{transform:translateY(-6px);box-shadow:0 22px 40px rgba(0,0,0,.28)}
@@ -390,8 +390,8 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
 .reel-cap span{flex:1}
 .reel-cap svg:last-child{color:var(--coral);transition:transform .25s}
 .reel-card:hover .reel-cap svg:last-child{transform:translateX(4px)}
-@media (max-width:900px){
+@media (max-width:1100px){
   .reels{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;-webkit-overflow-scrolling:touch}
   .reel-card{scroll-snap-align:start}
 }
-@media (max-width:900px) and (min-width:600px){.reels{grid-auto-columns:46%}}
+@media (max-width:1100px) and (min-width:600px){.reels{grid-auto-columns:40%}}
