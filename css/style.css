@@ -376,3 +376,7 @@ footer a:hover{color:var(--coral)}
 /* phone/email links: no underline */
 a[href^="tel:"],a[href^="mailto:"],.c-row b a,.cnote .call a,footer a{text-decoration:none}
 a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
+.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;align-items:start}
+.reel{min-width:0;display:flex;justify-content:center}
+.reel .instagram-media{margin:0!important;min-width:0!important;width:100%!important;max-width:400px!important;border-radius:18px!important}
+.reel blockquote:not(iframe){background:#fff;border-radius:18px;padding:40px 20px;text-align:center;font-weight:700}
