@@ -407,3 +407,6 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
 .mcard>div{flex:1;display:flex;flex-direction:column;align-items:flex-start}
 .mcard p{min-height:3em}
 .mcard .go{margin-top:auto}
+
+/* footer bottom: centred on every screen */
+.f-bottom{justify-content:center;text-align:center}

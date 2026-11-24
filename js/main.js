@@ -46,3 +46,4 @@
     document.querySelectorAll('.reveal').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el)}});
   }
 })();
+(function(){var y=new Date().getFullYear();document.querySelectorAll(".yr").forEach(function(e){e.textContent=y});})();
