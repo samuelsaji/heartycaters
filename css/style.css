@@ -87,7 +87,7 @@ header{position:absolute;inset:0 0 auto;z-index:20;padding-top:env(safe-area-ins
 .stamp img{width:84px}
 @media (max-width:900px){.stamp{display:none}}
 .about h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:20px}
-.feats{display:grid;gap:22px;margin:34px 0;padding:30px 0;border-block:1px solid var(--line)}
+.feats{display:grid;gap:22px;margin:30px 0}
 .feat{display:grid;grid-template-columns:52px 1fr;gap:16px}
 .ico{width:52px;height:52px;border-radius:50%;background:var(--maroon);color:#fff;display:grid;place-items:center}
 .feat h4{font-size:21px;margin-bottom:4px}
