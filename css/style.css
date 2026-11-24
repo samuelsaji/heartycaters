@@ -410,3 +410,9 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
 
 /* footer bottom: centred on every screen */
 .f-bottom{justify-content:center;text-align:center}
+
+/* veg / non-veg marks: drawn as SVG so the dot and triangle sit exactly centred */
+.mark{width:15px;height:15px;border:0;border-radius:0;display:inline-block;background:center/contain no-repeat;flex:none}
+.mark::after{display:none}
+.mark.v{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='2' fill='%23fff' stroke='%231E8A3E' stroke-width='1.6'/%3E%3Ccircle cx='8' cy='8' r='3.4' fill='%231E8A3E'/%3E%3C/svg%3E")}
+.mark.n{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='2' fill='%23fff' stroke='%238E2A1A' stroke-width='1.6'/%3E%3Cpolygon points='8,4.4 11.8,11.2 4.2,11.2' fill='%238E2A1A'/%3E%3C/svg%3E")}
