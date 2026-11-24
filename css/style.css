@@ -416,3 +416,18 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
 .mark::after{display:none}
 .mark.v{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='2' fill='%23fff' stroke='%231E8A3E' stroke-width='1.6'/%3E%3Ccircle cx='8' cy='8' r='3.4' fill='%231E8A3E'/%3E%3C/svg%3E")}
 .mark.n{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='2' fill='%23fff' stroke='%238E2A1A' stroke-width='1.6'/%3E%3Cpolygon points='8,4.4 11.8,11.2 4.2,11.2' fill='%238E2A1A'/%3E%3C/svg%3E")}
+
+/* stats cards (replaces in-hero stats strip) */
+.hero{padding-block:170px 150px}
+.kpi-sec{position:relative;z-index:3;margin-top:-72px;padding-block:0 10px}
+.kpi-sec.flat{margin-top:0;padding-block:10px 40px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.kpi{position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;gap:18px;background:#fff;border-radius:22px;padding:24px 22px;box-shadow:0 18px 40px rgba(29,21,20,.10)}
+.kpi::after{content:"";position:absolute;z-index:-1;width:130px;height:130px;border-radius:50%;right:-34px;bottom:-78px;background:var(--blush)}
+.kpi:nth-child(even)::after{background:#F8DDD3}
+.kpi-ico{flex:none;width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:var(--blush);color:var(--maroon)}
+.kpi-ico.alt{background:#F8DDD3}
+.kpi b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(28px,2.6vw,36px);line-height:1.05;color:var(--maroon);white-space:nowrap;font-variant-numeric:tabular-nums}
+.kpi span:not(.kpi-ico){display:block;margin-top:6px;font-size:15px;color:var(--ink)}
+@media (max-width:1100px){.kpis{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.kpis{gap:12px}.kpi{flex-direction:column;align-items:flex-start;gap:12px;padding:18px}.kpi-ico{width:48px;height:48px;border-radius:14px}.kpi-ico svg{width:22px;height:22px}.kpi b{font-size:26px}.kpi span:not(.kpi-ico){font-size:13.5px}.hero{padding-bottom:120px}}
