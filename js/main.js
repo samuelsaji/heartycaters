@@ -47,3 +47,5 @@
   }
 })();
 (function(){var y=new Date().getFullYear();document.querySelectorAll(".yr").forEach(function(e){e.textContent=y});})();
+// FAQ: only one answer open at a time
+(function(){var ds=[].slice.call(document.querySelectorAll("details"));ds.forEach(function(d){d.addEventListener("toggle",function(){if(d.open){ds.forEach(function(o){if(o!==d&&o.open)o.open=false})}})});})();
