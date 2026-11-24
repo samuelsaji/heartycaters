@@ -395,3 +395,9 @@ a[href^="tel:"]:hover,a[href^="mailto:"]:hover{color:var(--coral)}
   .reel-card{scroll-snap-align:start}
 }
 @media (max-width:1100px) and (min-width:600px){.reels{grid-auto-columns:40%}}
+
+/* service cards: line up titles, text and links across cards */
+.svc .body{width:100%;display:flex;flex-direction:column}
+.svc h3{min-height:2.3em;display:flex;align-items:flex-end;line-height:1.15}
+.svc p{min-height:4.7em}
+@media (max-width:560px){.svc h3,.svc p{min-height:0}}
